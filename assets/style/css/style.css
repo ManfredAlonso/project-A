@@ -1,0 +1,17 @@
+img {
+  max-width: 400px;
+}
+
+.ad {
+  max-width: 200px;
+  justify-content: space-between;
+}
+
+.estrutura {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "cabeca cabeca cabeca cabeca" "principal principal principal principal" "ad ad ad ad" "pe pe pe pe";
+}
+
+/*# sourceMappingURL=style.css.map */
