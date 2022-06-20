@@ -1,3 +1,30 @@
+header {
+  background-color: #5E548E;
+  margin: 0%;
+  padding-top: 1px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: auto;
+  height: auto;
+}
+header h1 {
+  margin: 0;
+  text-align: center;
+}
+header ul {
+  list-style: none;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+header ul li {
+  display: block;
+  align-self: center;
+  width: 40px;
+  height: 40px;
+}
+
 img {
   max-width: 400px;
 }
@@ -7,11 +34,8 @@ img {
   justify-content: space-between;
 }
 
-.estrutura {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "cabeca cabeca cabeca cabeca" "principal principal principal principal" "ad ad ad ad" "pe pe pe pe";
+body {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
