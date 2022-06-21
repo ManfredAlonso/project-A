@@ -63,7 +63,8 @@ header #main-menu a:hover {
     display: inline;
   }
 }
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
 }
 
