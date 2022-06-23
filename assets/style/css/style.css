@@ -1,4 +1,7 @@
 header {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 5;
   background-color: #3D0E61;
   margin: 0%;
   padding-top: 1px;
@@ -40,19 +43,40 @@ header #main-menu a:hover {
   text-decoration: underline;
 }
 
+main {
+  display: grid;
+  justify-content: center;
+}
+
 .principal {
   background-color: grey;
-  width: 800px;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
   text-decoration: underline;
 }
+.principal h3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.principal p {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.principal img {
+  display: grid;
+  grid-area: 3/1;
+}
 
 .ad {
-  max-width: 200px;
-  justify-content: space-between;
+  display: grid;
+  max-width: 500px;
+  justify-content: center;
+}
+
+footer {
+  display: grid;
 }
 
 .pe {
@@ -66,30 +90,29 @@ header #main-menu a:hover {
   text-decoration: dashed;
 }
 
-.estrutura {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-template-areas: "cabeca cabeca cabeca cabeca" "principal principal principal principal" "ad ad ad ad" "pe pe pe pe";
+.item-a {
+  grid-area: header;
 }
 
-@media (max-width: 1200px) {
-  .estrutura {
-    width: fit-content;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "cabeca cabeca" "principal principal" "ad ad" "pe pe";
-  }
+.item-b {
+  grid-area: main;
 }
-@media (max-width: 640px) {
-  .estrutura {
-    max-width: fit-content;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "cabeca" "principal" "ad" "pe";
-  }
+
+.item-c {
+  grid-area: sidebar;
 }
+
+.item-d {
+  grid-area: footer;
+}
+
+.estrutura {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "header header header header" "main main main sidebar" "footer footer footer footer";
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
