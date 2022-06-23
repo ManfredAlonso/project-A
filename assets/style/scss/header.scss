@@ -1,4 +1,8 @@
 header {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    
     background-color: #3D0E61;
     margin: 0%;
     padding-top: 1px;
