@@ -66,12 +66,28 @@ header #main-menu a:hover {
   text-decoration: dashed;
 }
 
-@media screen and (max-width: 750px) {
-  #main-menu {
-    display: none;
+.estrutura {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "cabeca cabeca cabeca cabeca" "principal principal principal principal" "ad ad ad ad" "pe pe pe pe";
+}
+
+@media (max-width: 1200px) {
+  .estrutura {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "cabeca cabeca" "principal principal" "ad ad" "pe pe";
   }
-  #hamburger-menu {
-    display: inline;
+}
+@media (max-width: 640px) {
+  .estrutura {
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "cabeca" "principal" "ad" "pe";
   }
 }
 * {
