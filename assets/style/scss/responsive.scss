@@ -20,3 +20,29 @@
     "main main main sidebar"
     "footer footer footer footer";
 }
+
+@media(max-width:1200px){
+  .estrutura{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header"
+    "main main sidebar"
+    "footer footer sidebar";
+  }
+
+}
+
+@media(max-width:650px){
+  .estrutura{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header"
+    "main sidebar"
+    "footer sidebar";
+  }
+
+}

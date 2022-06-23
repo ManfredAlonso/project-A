@@ -64,10 +64,9 @@ main {
   grid-column-start: 1;
   grid-column-end: 3;
 }
-.principal img {
-  display: grid;
-  grid-area: 3/2;
-  justify-content: center;
+.principal .imagem {
+  display: block;
+  margin-left: 290px;
 }
 
 .ad {
@@ -114,6 +113,22 @@ footer {
   grid-template-areas: "header header header header" "main main main sidebar" "footer footer footer footer";
 }
 
+@media (max-width: 1200px) {
+  .estrutura {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header" "main main sidebar" "footer footer sidebar";
+  }
+}
+@media (max-width: 650px) {
+  .estrutura {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header header" "main sidebar" "footer sidebar";
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
