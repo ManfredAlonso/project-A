@@ -1,42 +1,22 @@
-.estrutura{
+.item-a {
+  grid-area: header;
+}
+.item-b {
+  grid-area: main;
+}
+.item-c {
+  grid-area: sidebar;
+}
+.item-d {
+  grid-area: footer;
+}
+
+.estrutura {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
-  "cabeca cabeca cabeca cabeca"
-  "principal principal principal principal"
-  "ad ad ad ad"
-  "pe pe pe pe"
-  ;
-}
-
-@media(max-width:1200px){
-  .estrutura{
-    width: fit-content;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "cabeca cabeca"
-    "principal principal"
-    "ad ad"
-    "pe pe"
-    ;
-  }
-}
-
-
-
-@media(max-width:640px){
-  .estrutura{
-    max-width: fit-content;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "cabeca"
-    "principal"
-    "ad"
-    "pe"
-    ;
-  }
+    "header header header header"
+    "main main main sidebar"
+    "footer footer footer footer";
 }
