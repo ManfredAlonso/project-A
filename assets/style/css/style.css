@@ -55,6 +55,17 @@ header #main-menu a:hover {
   justify-content: space-between;
 }
 
+.pe {
+  text-align: center;
+  background-color: #231942;
+}
+.pe a {
+  color: white;
+}
+.pe a:hover {
+  text-decoration: dashed;
+}
+
 @media screen and (max-width: 750px) {
   #main-menu {
     display: none;
