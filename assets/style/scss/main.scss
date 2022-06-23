@@ -1,10 +1,26 @@
-.principal{
-    background-color: grey;
-    width: 800px;
+main{
+    display: grid;
     justify-content: center;
+    
+}
+.principal{ 
+    background-color: grey;
+    justify-content: space-between;
     align-content: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     text-decoration: underline;
+    h3{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    p{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    img{
+        display: grid;
+        grid-area: 3/1;
+    }
 }
 
